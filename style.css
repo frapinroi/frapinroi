@@ -1,0 +1,276 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, rgb(51, 12, 28), #48c6ef);  /* Fondo degradado de colores vibrantes */
+    color: rgb(240, 231, 231);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Título principal */
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+/* Contenedor principal con bordes redondeados y sombra */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+/* Estilo para las cajas de botones (izquierda y derecha) */
+.left-box, .right-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.left-box button,
+.right-box button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ancho completo para botones */
+}
+
+.left-box button:hover,
+.right-box button:hover {
+    background-color: #45a049;
+}
+
+.left-box button:active,
+.right-box button:active {
+    background-color: #255a27;
+}
+
+/* Enlace de cerrar sesión */
+.logout-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logout-container a {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #d32f2f;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-container a:hover {
+    background-color: #b71c1c;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .left-box, .right-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        width: 100%;
+        padding: 15px;
+        font-size: 2rem;
+    }
+
+    .logout-container a {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+/* Ajustes formulario */
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Ajustes tabla ver socios */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2a101d, #bba319);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Estilos de la tabla */
+.socios-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Estilo de las celdas de la tabla */
+.socios-table th, .socios-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    color: #444; /* Color del texto de las celdas */
+}
+
+.socios-table th {
+    background-color: #f2f2f2;
+    color: #2a101d; /* Color para los encabezados */
+    font-weight: bold;
+}
+
+.socios-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.socios-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Cambia el color de las celdas al pasar el ratón por encima */
+.socios-table td:hover {
+    background-color: #e2e2e2;
+}
+
+
+/* Estilo para el contenedor del enlace (fondo blanco) */
+
+.enlace-boton {
+    background-color: white;  /* Fondo blanco */
+    border: 2px solid #2855d1; /* Borde color naranja */
+    padding: 5px 5px; /* Espaciado más amplio para hacer el botón más grande */
+    border-radius: 8px; /* Bordes redondeados más suaves */
+    display: inline-block; /* Hace que el contenedor se ajuste al tamaño del contenido */
+    text-align: center; /* Centra el texto */
+    font-size: 16px; /* Tamaño de fuente agradable */
+    font-weight: bold; /* Texto en negrita */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Estilo para el enlace dentro del contenedor */
+.enlace-boton a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #23a51e; /* Color del texto */
+    display: inline-block; /* Hace que el enlace sea un bloque dentro del contenedor */
+    padding: 5px 10px; /* Relleno dentro del enlace */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para el color y el efecto de transformación */
+}
+
+/* Efecto hover para el enlace */
+.enlace-boton:hover {
+    background-color: #0044ff; /* Fondo naranja al pasar el ratón */
+    border-color: #4350ff; /* Cambio en el color del borde */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+}
+
+.enlace-boton a:hover {
+    color: white; /* El texto se vuelve blanco al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevar el botón ligeramente */
+}
+
